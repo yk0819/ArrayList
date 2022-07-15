@@ -1,0 +1,21 @@
+public class MemberArrayListTest {
+	
+	public static void main(String[] args) {
+		
+		MemberArrayList array = new MemberArrayList();
+		
+		Member memberUnjo = new Member(809, "運上弘菜");
+		Member memberTanaka = new Member(912, "田中美久");
+		Member memberKitahara = new Member(624, "北原里英");
+		Member memberSakai = new Member(000, "堺萌香");
+
+		array.addMember(memberUnjo);
+		array.addMember(memberTanaka);
+		array.addMember(memberKitahara);
+		array.addMember(memberSakai);
+		
+		array.showAllMember();
+		array.removeMember(memberSakai.getMemberId());
+		array.showAllMember();
+	}
+}
